@@ -51,6 +51,7 @@ const lend = async (user_id, loan_amount, interest_rate, loan_period) => {
   await user.save();
 
   return {
+    loan,
     total_amount,
     monthly_emi: calculatedEMIs,
   };
